@@ -2,11 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="description" content="{{ page.description }}">
     <title>{{ site.data.info.name }} - {{ page.title }}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicons/manifest.json">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="{{'/assets/style.css' | prepend: site.baseurl}}">
   </head>
   <body>
-    <section>
-      {{ content }}
-    </section>
+    {{ content }}
   </body>
 </html>
